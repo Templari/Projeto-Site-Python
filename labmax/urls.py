@@ -22,6 +22,6 @@ from django.contrib.staticfiles import views
 import django
 
 urlpatterns = [
-	url(r'', include('clinica.urls')),
-    url(r'^admin/', admin.site.urls)
+    url(r'^admin/', admin.site.urls),
+    url(r'^', include('clinica.urls'))
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
