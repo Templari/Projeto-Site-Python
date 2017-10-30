@@ -2564,6 +2564,14 @@
 		color: #717171;
 	}
 
+	#header img {
+	position: absolute; 
+	left: 0px; /* posiciona a 90px para a esquerda */ 
+	top: 10px; /* posiciona a 70px para baixo */
+	width: 150px;
+	height: 60px;
+	}
+
 /* Table */
 
 	.table-wrapper {
