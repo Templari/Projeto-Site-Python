@@ -8,3 +8,6 @@ def post_list(request):
 	return render(request,'paginas/index.html', {'exames':exames})
 def generic(request):
 	return render(request,'paginas/generic.html',{})
+def index(request):
+	exames = Exames.objects.filter(published_date__lte = timezone.now()).order_by('published_date')
+	return render(request,'paginas/index.html', {'exames':exames})
