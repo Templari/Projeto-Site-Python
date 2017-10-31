@@ -36,12 +36,24 @@ class Paciente(models.Model):
     author = models.ForeignKey('auth.User')
     nome = models.CharField(max_length=200)
     cpf = models.CharField('CPF', max_length=11,unique=True)
+    codigo = models.CharField('Codigo',max_length=11,unique=True,null=True)
     idade = models.IntegerField()
     email = models.EmailField(unique=True)
     telefone = models.CharField(max_length=20, blank=True)
     criado_em = models.DateTimeField('criado em', auto_now_add=True)
     file = models.FileField(upload_to='pacientes/exames',blank=True)
 
+
+    def getCodigo(self):
+        return self.codigo
+    def setCodigo(self,codigo=''):
+        self.codigo=codigo
+    def getCpf(self):
+        return self.cpf
+    def setCpf(self,cpf=''):
+        self.cpf=cpf
+    def getFile(self):
+        return self.file    
     class Meta:
         ordering = ['criado_em']
         verbose_name = (u'nome')
