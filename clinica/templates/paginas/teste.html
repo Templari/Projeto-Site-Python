@@ -21,6 +21,8 @@
 				<a href="{{ paciente.file.url }}">{{ paciente.file.url }}</a>
 				{{ paciente.nome }}
 				deu certo
+			{% else %}
+				Não tem nada no banco! Sorry!
 			{% endif %}
 		{% endfor %}
 	</body>
