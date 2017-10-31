@@ -14,7 +14,7 @@ def generic(request):
 		paciente = Paciente.objects.all()
 		cpf = request.POST.get('cpf')
 		codigo   = request.POST.get('codigo')
-		return render(request,'paginas/teste.html', {'paciente':paciente,'codigo':codigo,'cpf':cpf})
+		return render(request,'paginas/generic.html', {'paciente':paciente,'codigo':codigo,'cpf':cpf})
 	return render(request,'paginas/generic.html', {})
 def index(request):
 	exames = Exames.objects.filter(published_date__lte = timezone.now()).order_by('published_date')
