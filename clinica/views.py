@@ -22,3 +22,5 @@ def index(request):
 	return render(request,'paginas/index.html', {'exames':exames})
 def elements(request):
 	return render(request,'paginas/elements.html', {})
+def about(request):
+	return render(request,'paginas/sobre.html', {})
