@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+{% load staticfiles %}
+
+<html>
+	<head>
+		<title>Elements - Introspect by TEMPLATED</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'css/main.css' %}"
+	</head>
+	
+	<body>
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="logo">introspect</a>
+					<nav id="nav">
+						<a href="">Home</a>
+						<a href="generic">Generic</a>
+						<a href="about">Elements</a>
+					</nav>
+				</div>
+			</header>
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+			<!-- Main -->
+			<section id="main">
+				<div class="inner">
+					<header class="major special">
+						<h1>Quem somos?</h1>
+						<p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula. Integer adipiscin sem. Nullam quis massa sit amet nibh viverra malesuada. Nunc sem lacus, accumsan quis, faucibus non, congue vel, arcu, erisque hendrerit tellus. Integer sagittis. Vivamus a mauris eget arcu gravida tristique. Nunc iaculis mi in ante.</p>
+					</header>
+
+					<!-- Image -->
+					<section>
+						<h3>Image</h3>
+						<h4>Fit</h4>
+						<div class="box alt">
+							<div class="row 50% uniform">
+								<!--<div class="12u$"><span class="image fit"><img src="{% static 'images/pic11.jpg' %}" alt="" /></span></div>-->
+								<div class="4u"><span class="image fit"><img src="{% static 'images/pic03.jpg' %}" alt="" /></span></div>
+							</div>
+						</div>
+					</section>
+
+					<!-- Text -->
+					<section>
+						<h3>Text</h3>
+						<p>
+							This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.
+						</p>
+
+					</section>
+				</div>
+			</section>
+
+
+
+
+	</body>
+
+</head>
