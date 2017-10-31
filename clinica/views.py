@@ -7,16 +7,15 @@ def post_list(request):
 	exames = Exames.objects.filter(published_date__lte = timezone.now()).order_by('published_date')
 	return render(request,'paginas/index.html', {'exames':exames})
 def generic(request):
+	paciente = Paciente.objects.filter().values()
+	cpf = request.POST.get('cpf')
+	codigo   = request.POST.get('codigo')
 	if(request.method == 'POST'):
 		paciente = Paciente.objects.all()
 		cpf = request.POST.get('cpf')
 		codigo   = request.POST.get('codigo')
-
-		for paciente in paciente:
-			if(paciente.getCodigo() == codigo and paciente.getCpf() == cpf):
-				return render(request, paciente.getFile, {})
-	return render(request,'paginas/generic.html',{})
-
+		return render(request,'paginas/teste.html', {'paciente':paciente,'codigo':codigo,'cpf':cpf})
+	return render(request,'paginas/generic.html', {})
 def index(request):
 	exames = Exames.objects.filter(published_date__lte = timezone.now()).order_by('published_date')
 	return render(request,'paginas/index.html', {'exames':exames})
