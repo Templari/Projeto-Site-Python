@@ -2014,6 +2014,7 @@
 
 	form {
 		margin: 0 0 2em 0;
+
 	}
 
 		form .field {
@@ -3803,7 +3804,7 @@
 			#footer input[type="button"]:hover,
 			#footer button:hover,
 			#footer .button:hover {
-				background-color: #676767;
+				background-color: #e826d8;
 			}
 
 			#footer input[type="submit"]:active,
@@ -3971,30 +3972,30 @@
 		/* Footer2 */
 
 	#footer2 {
-		background-color: #1429c9;/*aqui*/
+		background-color: #ffffff;/*aqui*/
 		color: #70a9df;
 		padding: 4em 0 2em 0;
 		background: display: block;#000000;
 	}
 
 		#footer2 input, #footer2 select, #footer2 textarea {
-			color: #ffffff;
+			color: #000000;
 		}
 
 		#footer2 a {
-			color: #ffffff;
+			color: #fe2e2e;
 		}
 
 		#footer2 strong, #footer2 b {
-			color: #ffffff;
+			color: #fe2e2e;
 		}
 
 		#footer2 h1, #footer2 h2, #footer2 h3, #footer2 h4, #footer2 h5, #footer2 h6 {
-			color: #fff;
+			color: #403e40;
 		}
 
 		#footer2 blockquote {
-			border-left-color: #fff;
+			border-left-color: #fe2e2e;
 		}
 
 		#footer2 code {
@@ -4003,7 +4004,7 @@
 		}
 
 		#footer2 hr {
-			border-bottom-color: #fff;
+			border-bottom-color: #e826d8;
 		}
 
 		#footer2 input[type="submit"],
@@ -4011,7 +4012,7 @@
 		#footer2 input[type="button"],
 		#footer2 button,
 		#footer2 .button {
-			background-color: #5a5a5a;
+			background-color: #403e40; /*aqui*/
 			color: #ffffff !important;
 		}
 
@@ -4020,7 +4021,7 @@
 			#footer2 input[type="button"]:hover,
 			#footer2 button:hover,
 			#footer2 .button:hover {
-				background-color: #676767;
+				background-color: #403e40; /*aqui*/
 			}
 
 			#footer2 input[type="submit"]:active,
@@ -4036,7 +4037,7 @@
 			#footer2 input[type="button"].alt,
 			#footer2 button.alt,
 			#footer2 .button.alt {
-				back2ground-color: transparent;
+				background-color: transparent;
 				box-shadow: inset 0 0 0 2px #fff;
 				color: #ffffff !important;
 			}
@@ -4075,7 +4076,7 @@
 			}
 
 		#footer2 label {
-			color: #ffffff;
+			color: #403e40; /*aqui*/
 		}
 
 		#footer2 input[type="text"],
@@ -4084,7 +4085,7 @@
 		#footer2 select,
 		#footer2 textarea {
 			background: none;
-			border-color: rgba(255, 255, 255, 0.25);
+			border-color: #403e40;
 		}
 
 			#footer2 input[type="text"]:focus,
@@ -4092,12 +4093,12 @@
 			#footer2 input[type="email"]:focus,
 			#footer2 select:focus,
 			#footer2 textarea:focus {
-				border-color: #ffffff;
+				border-color: #403e40;
 				box-shadow: 0 0 0 1px #ffffff;
 			}
 
 		#footer2 .select-wrapper:before {
-			color: #fff;
+			color: #000;
 		}
 
 		#footer2 input[type="checkbox"] + label,
