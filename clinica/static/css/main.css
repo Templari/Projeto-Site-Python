@@ -1789,7 +1789,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #e5474b;
+		color: #1429c9; /*aqui*/
 	}
 
 	blockquote {
@@ -1827,7 +1827,7 @@
 		}
 
 	.box {
-		border-color: #e5474b;
+		border-color: #1429c9;
 	}
 
 /* Button */
@@ -1957,8 +1957,8 @@
 		button.alt,
 		.button.alt {
 			background-color: transparent;
-			box-shadow: inset 0 0 0 2px #e5474b;
-			color: #e5474b !important;
+			box-shadow: inset 0 0 0 2px #1429c9; /*aqui*/
+			color: #bd1818 !important;
 		}
 
 			input[type="submit"].alt:hover,
@@ -2453,6 +2453,7 @@
 			}
 
 			ul.actions.vertical li {
+
 				display: block;
 				padding: 1em 0 0 0;
 			}
@@ -2479,6 +2480,7 @@
 				padding: 0;
 				table-layout: fixed;
 				width: calc(100% + 1em);
+
 			}
 
 				ul.actions.fit li {
@@ -2764,7 +2766,7 @@
 					.wrapper.style1 input[type="button"].alt.icon:before,
 					.wrapper.style1 button.alt.icon:before,
 					.wrapper.style1 .button.alt.icon:before {
-						color: #f8d1d2;
+						color: #bd1818;
 					}
 
 				.wrapper.style1 input[type="submit"].special,
@@ -3106,7 +3108,7 @@
 	}
 
 	#header {
-		background: #1c1c1c;
+		background: #1CA61E;
 		color: #d5d5d5;
 		cursor: default;
 		height: 5em;
@@ -3442,8 +3444,8 @@
 			#banner button.alt,
 			#banner .button.alt {
 				background-color: transparent;
-				box-shadow: inset 0 0 0 2px #fff;
-				color: #ffffff !important;
+				box-shadow: inset 0 0 0 2px #bd1818; /*aqui*/
+				color: #bd1818 !important;
 			}
 
 				#banner input[type="submit"].alt:hover,
@@ -3476,7 +3478,7 @@
 			#banner button.special,
 			#banner .button.special {
 				background-color: #ffffff;
-				color: #e5474b !important;
+				color: #1CA61E !important;
 			}
 
 		#banner:after {
@@ -3709,6 +3711,7 @@
 
 				#three .inner article p {
 					color: #717171;
+
 				}
 
 				#three .inner article .icon {
@@ -3895,7 +3898,7 @@
 		#footer input[type="radio"]:checked + label:before {
 			background-color: #ffffff;
 			border-color: #ffffff;
-			color: #e5474b;
+			color: #1CA61E;
 		}
 
 		#footer input[type="checkbox"]:focus + label:before,
