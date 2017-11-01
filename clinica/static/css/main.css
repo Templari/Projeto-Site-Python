@@ -1789,7 +1789,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #1429c9; /*aqui*/
+		color: #0174df; /*aqui*/
 	}
 
 	blockquote {
@@ -1957,8 +1957,8 @@
 		button.alt,
 		.button.alt {
 			background-color: transparent;
-			box-shadow: inset 0 0 0 2px #1429c9; /*aqui*/
-			color: #bd1818 !important;
+			box-shadow: inset 0 0 0 2px #0174df; /*aqui*/
+			color: #fe2e2e !important;
 		}
 
 			input[type="submit"].alt:hover,
@@ -3108,7 +3108,7 @@
 	}
 
 	#header {
-		background: #1CA61E;
+		background: #6dd24a;
 		color: #d5d5d5;
 		cursor: default;
 		height: 5em;
@@ -3444,8 +3444,8 @@
 			#banner button.alt,
 			#banner .button.alt {
 				background-color: transparent;
-				box-shadow: inset 0 0 0 2px #bd1818; /*aqui*/
-				color: #bd1818 !important;
+				box-shadow: inset 0 0 0 2px #0174df; /*aqui*/
+				color: #fe2e2e !important;
 			}
 
 				#banner input[type="submit"].alt:hover,
@@ -3754,10 +3754,10 @@
 /* Footer */
 
 	#footer {
-		background-color: #e5474b;
-		color: #f2a3a5;
+		background-color: #1429c9;/*aqui*/
+		color: #70a9df;
 		padding: 4em 0 2em 0;
-		background: #e5474b;
+		background: #0174DF;
 	}
 
 		#footer input, #footer select, #footer textarea {
@@ -3854,7 +3854,7 @@
 			#footer button.special,
 			#footer .button.special {
 				background-color: #ffffff;
-				color: #e5474b !important;
+				color: #70a9df !important;
 			}
 
 		#footer label {
@@ -3949,7 +3949,7 @@
 		}
 
 			#footer .copyright a {
-				color: #f2a3a5;
+				color: #dfdfdf;
 			}
 
 		@media screen and (max-width: 980px) {
