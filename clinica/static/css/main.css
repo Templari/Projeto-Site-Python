@@ -1966,7 +1966,7 @@
 			input[type="button"].alt:hover,
 			button.alt:hover,
 			.button.alt:hover {
-				background: #8fd278;
+				background: none;
 			}
 
 			input[type="submit"].alt:active,
@@ -4021,7 +4021,7 @@
 			#footer2 input[type="button"]:hover,
 			#footer2 button:hover,
 			#footer2 .button:hover {
-				background-color: #403e40; /*aqui*/
+				background-color: #636063; /*aqui*/
 			}
 
 			#footer2 input[type="submit"]:active,
