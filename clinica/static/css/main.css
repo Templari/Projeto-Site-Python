@@ -9,7 +9,7 @@
 
 /* Reset */
 
-	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, footer2, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
 		border: 0;
@@ -18,7 +18,7 @@
 		vertical-align: baseline;
 	}
 
-	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	article, aside, details, figcaption, figure, footer, footer2, header, hgroup, menu, nav, section {
 		display: block;
 	}
 
@@ -3963,6 +3963,223 @@
 		@media screen and (max-width: 736px) {
 
 			#footer {
+				padding: 2em 0 0.1em 0;
+			}
+
+		}
+
+		/* Footer2 */
+
+	#footer2 {
+		background-color: #1429c9;/*aqui*/
+		color: #70a9df;
+		padding: 4em 0 2em 0;
+		background: d#1429c9;
+	}
+
+		#footer2 input, #footer2 select, #footer2 textarea {
+			color: #ffffff;
+		}
+
+		#footer2 a {
+			color: #ffffff;
+		}
+
+		#footer2 strong, #footer2 b {
+			color: #ffffff;
+		}
+
+		#footer2 h1, #footer2 h2, #footer2 h3, #footer2 h4, #footer2 h5, #footer2 h6 {
+			color: #fff;
+		}
+
+		#footer2 blockquote {
+			border-left-color: #fff;
+		}
+
+		#footer2 code {
+			background: none;
+			border-color: #fff;
+		}
+
+		#footer2 hr {
+			border-bottom-color: #fff;
+		}
+
+		#footer2 input[type="submit"],
+		#footer2 input[type="reset"],
+		#footer2 input[type="button"],
+		#footer2 button,
+		#footer2 .button {
+			background-color: #5a5a5a;
+			color: #ffffff !important;
+		}
+
+			#footer2 input[type="submit"]:hover,
+			#footer2 input[type="reset"]:hover,
+			#footer2 input[type="button"]:hover,
+			#footer2 button:hover,
+			#footer2 .button:hover {
+				background-color: #676767;
+			}
+
+			#footer2 input[type="submit"]:active,
+			#footer2 input[type="reset"]:active,
+			#footer2 input[type="button"]:active,
+			#footer2 button:active,
+			#footer2 .button:active {
+				background-color: #4d4d4d;
+			}
+
+			#footer2 input[type="submit"].alt,
+			#footer2 input[type="reset"].alt,
+			#footer2 input[type="button"].alt,
+			#footer2 button.alt,
+			#footer2 .button.alt {
+				background-color: transparent;
+				box-shadow: inset 0 0 0 2px #fff;
+				color: #ffffff !important;
+			}
+
+				#footer2 input[type="submit"].alt:hover,
+				#footer2 input[type="reset"].alt:hover,
+				#footer2 input[type="button"].alt:hover,
+				#footer2 button.alt:hover,
+				#footer2 .button.alt:hover {
+					background: rgba(255, 255, 255, 0.25);
+				}
+
+				#footer2 input[type="submit"].alt:active,
+				#footer2 input[type="reset"].alt:active,
+				#footer2 input[type="button"].alt:active,
+				#footer2 button.alt:active,
+				#footer2 .button.alt:active {
+					background-color: rgba(255, 255, 255, 0.2);
+				}
+
+				#footer2 input[type="submit"].alt.icon:before,
+				#footer2 input[type="reset"].alt.icon:before,
+				#footer2 input[type="button"].alt.icon:before,
+				#footer2 button.alt.icon:before,
+				#footer2 .button.alt.icon:before {
+					color: #f8d1d2;
+				}
+
+			#footer2 input[type="submit"].special,
+			#footer2 input[type="reset"].special,
+			#footer2 input[type="button"].special,
+			#footer2 button.special,
+			#footer2 .button.special {
+				background-color: #ffffff;
+				color: #70a9df !important;
+			}
+
+		#footer2 label {
+			color: #ffffff;
+		}
+
+		#footer2 input[type="text"],
+		#footer2 input[type="password"],
+		#footer2 input[type="email"],
+		#footer2 select,
+		#footer2 textarea {
+			background: none;
+			border-color: rgba(255, 255, 255, 0.25);
+		}
+
+			#footer2 input[type="text"]:focus,
+			#footer2 input[type="password"]:focus,
+			#footer2 input[type="email"]:focus,
+			#footer2 select:focus,
+			#footer2 textarea:focus {
+				border-color: #ffffff;
+				box-shadow: 0 0 0 1px #ffffff;
+			}
+
+		#footer2 .select-wrapper:before {
+			color: #fff;
+		}
+
+		#footer2 input[type="checkbox"] + label,
+		#footer2 input[type="radio"] + label {
+			color: #f2a3a5;
+		}
+
+			#footer2 input[type="checkbox"] + label:before,
+			#footer2 input[type="radio"] + label:before {
+				background: none;
+				border-color: #fff;
+			}
+
+		#footer2 input[type="checkbox"]:checked + label:before,
+		#footer2 input[type="radio"]:checked + label:before {
+			background-color: #ffffff;
+			border-color: #ffffff;
+			color: #1CA61E;
+		}
+
+		#footer2 input[type="checkbox"]:focus + label:before,
+		#footer2 input[type="radio"]:focus + label:before {
+			border-color: #ffffff;
+			box-shadow: 0 0 0 1px #ffffff;
+		}
+
+		#footer2 ::-webkit-input-placeholder {
+			color: #f8d1d2 !important;
+		}
+
+		#footer2 :-moz-placeholder {
+			color: #f8d1d2 !important;
+		}
+
+		#footer2 ::-moz-placeholder {
+			color: #f8d1d2 !important;
+		}
+
+		#footer2 :-ms-input-placeholder {
+			color: #f8d1d2 !important;
+		}
+
+		#footer2 .formerize-placeholder {
+			color: #f8d1d2 !important;
+		}
+
+		#footer2 .inner {
+			max-width: 65em;
+			width: calc(100% - 6em);
+			margin: 0 auto;
+		}
+
+			@media screen and (max-width: 480px) {
+
+				#footer2 .inner {
+					max-width: 90%;
+					width: 90%;
+				}
+
+			}
+
+		#footer2 .copyright {
+			font-size: 0.9em;
+			margin: 0 0 2em 0;
+			padding: 0;
+		}
+
+			#footer2 .copyright a {
+				color: #dfdfdf;
+			}
+
+		@media screen and (max-width: 980px) {
+
+			#footer2 {
+				padding: 4em 0 2em 0;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#footer2 {
 				padding: 2em 0 0.1em 0;
 			}
 
