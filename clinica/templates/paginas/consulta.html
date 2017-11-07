@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+{% load staticfiles %}
+<!--
+	Introspect by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Generic - Introspect by TEMPLATED</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'css/main.css' %}"
+	</head>
+	<body>
+
+
+
+
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index" class="logo"><img src="../../static/images/logo.png" alt=""/></a>
+					<a href="#" class="button alt">Coleta Domiciliar</a>
+					<nav id="nav">
+						<a href="index">Inicio</a>
+						<a href="generic">Obter Exame</a>
+						<a href="about">Sobre Nós</a>
+						<a href="contato">Contato</a>
+						<a href="admin">Administrador</a>
+					</nav>
+
+				</div>
+			</header>
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+		<section id="footer2">
+				<div class="inner">
+					<header>
+						<h2>Obtenha seu Exame</h2>
+					</header>
+					<form method="POST">{% csrf_token %}
+						<div class="field half first">
+							<label for="Nome">Nome Completo</label>
+							<input type="text" name="nomecompleto" id="nomecompleto" />
+						</div>
+						<div class="field half">
+							<label for="CPF">CPF</label>
+							<input type="text" name="cpf" id="cpf" />
+						</div>
+						<div class="field half firts">
+							<label for="Rua">Rua</label>
+							<input type="text" name="rua" id ="rua"/>
+						</div>
+						<div class="field half firts">
+							<label for="Numero">Numero</label>
+							<input type="text" name="numero" id ="numero"/>
+						</div>
+						<div class="field half">
+							<label for="Bairro">Bairro</label>
+							<input type="text" name="bairro" id ="bairro"/>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Gerar Exame" class="Documento"/></li>
+						</ul>
+						{% for paciente in paciente %}
+							{% if paciente.codigo == codigo and paciente.cpf == cpf %}
+								<!--<iframe src="{{ paciente.file.url }}" frameborder="0" marginheight="0" marginwidth="0" scrolling="no"></iframe>-->
+								<h3>Paciente:{{ paciente.nome }}</h3><br>
+								<h3>Baixe o Exame: <a href="{{ paciente.file.url }}">Clique Aqui!</a></h3>
+							{% else %}
+								Dados Incorretos!
+							{% endif %}
+						{% endfor %}
+					</form>
+				</div>
+		</section>
+
+
+		<!-- Footer2 -->
+			<section id="footer2">
+				<div class="inner">
+					<header>
+						<h2>Get in Touch</h2>
+					</header>
+					<div class="copyright">
+						&copy; Untitled Design: <a href="https://templated.co/">TEMPLATED</a>. Images <a href="https://unsplash.com/">Unsplash</a>
+					</div>
+				</div>
+			</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

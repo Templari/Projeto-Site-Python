@@ -23,3 +23,5 @@ def elements(request):
 	return render(request,'paginas/elements.html', {})
 def about(request):
 	return render(request,'paginas/sobre.html', {})
+def consulta(request):
+	return render(request,'paginas/consulta.html',{})
