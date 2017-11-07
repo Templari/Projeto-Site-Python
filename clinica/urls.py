@@ -5,5 +5,6 @@ urlpatterns = [
     url(r'^$', views.post_list),
     url(r'^generic$',views.generic),
     url(r'^index$',views.index),
-    url(r'^about$',views.about)
+    url(r'^about$',views.about),
+    url(r'^consulta$',views.consulta)
 ]
