@@ -3196,6 +3196,75 @@
 		}
 
 	}
+	#header input[type="submit"],
+		#header input[type="reset"],
+		#header input[type="button"],
+		#header button,
+		#header .button {
+			background-color: #5a5a5a;
+			color: #ffffff !important;
+		}
+
+			#header input[type="submit"]:hover,
+			#header input[type="reset"]:hover,
+			#header input[type="button"]:hover,
+			#header button:hover,
+			#header .button:hover {
+				background-color: #676767;
+			}
+
+			#header input[type="submit"]:active,
+			#header input[type="reset"]:active,
+			#header input[type="button"]:active,
+			#header button:active,
+			#header .button:active {
+				background-color: #4d4d4d;
+			}
+
+			#header input[type="submit"].alt,
+			#header input[type="reset"].alt,
+			#header input[type="button"].alt,
+			#header button.alt,
+			#header .button.alt {
+				background-color: transparent;
+				box-shadow: inset 0 0 0 2px #0174df; /*aqui*/
+				color: #fe2e2e !important;
+			}
+
+				#header input[type="submit"].alt:hover,
+				#header input[type="reset"].alt:hover,
+				#header input[type="button"].alt:hover,
+				#header button.alt:hover,
+				#header .button.alt:hover {
+					background: rgba(255, 255, 255, 0.25);
+				}
+
+				#header input[type="submit"].alt:active,
+				#header input[type="reset"].alt:active,
+				#header input[type="button"].alt:active,
+				#header button.alt:active,
+				#header .button.alt:active {
+					background-color: rgba(255, 255, 255, 0.2);
+				}
+
+				#header input[type="submit"].alt.icon:before,
+				#header input[type="reset"].alt.icon:before,
+				#header input[type="button"].alt.icon:before,
+				#header button.alt.icon:before,
+				#header .button.alt.icon:before {
+					color: #f8d1d2;
+				}
+
+			#header input[type="submit"].special,
+			#header input[type="reset"].special,
+			#header input[type="button"].special,
+			#header button.special,
+			#header .button.special {
+				background-color: #ffffff;
+				color: #1CA61E !important;
+			}
+
+	
 
 /* Menu */
 

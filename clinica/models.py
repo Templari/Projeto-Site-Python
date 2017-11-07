@@ -34,7 +34,7 @@ class Exames(models.Model):
 
 class Paciente(models.Model):
     author = models.ForeignKey('auth.User')
-    nome = models.CharField(max_length=200)
+    nome = models.CharField('Nome Completo',max_length=200)
     cpf = models.CharField('CPF', max_length=11,unique=True)
     codigo = models.CharField('Codigo',max_length=11,unique=True,null=True)
     idade = models.IntegerField()
