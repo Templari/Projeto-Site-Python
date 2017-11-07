@@ -39,17 +39,22 @@
 
 		<section id="footer2">
 				<div class="inner">
-					<header>
-						<h2>Obtenha seu Exame</h2>
-					</header>
+
+				
+					
 					<form method="POST">{% csrf_token %}
+						
+						{% if codigo == 0 %}
+						<header>
+							<h2>Obtenha seu Exame</h2>
+						</header>	
 						<div class="field half first">
 							<label for="Nome">Nome Completo</label>
 							<input type="text" name="nomecompleto" id="nomecompleto" />
 						</div>
 						<div class="field half">
-							<label for="CPF">CPF</label>
-							<input type="text" name="cpf" id="cpf" />
+							<label for="Telefone">Telefone</label>
+							<input type="text" name="telefone" id="telefone" />
 						</div>
 						<div class="field half firts">
 							<label for="Rua">Rua</label>
@@ -63,31 +68,52 @@
 							<label for="Bairro">Bairro</label>
 							<input type="text" name="bairro" id ="bairro"/>
 						</div>
+						<div class="field half">
+							<label for="Complemento">Complemento</label>
+							<input type="text" name="complemento" id ="complemento"/>
+						</div>
+						<div class="field half">
+							<label for="Email">Email</label>
+							<input type="email" name="email" id ="email"/>
+						</div>
 						<ul class="actions">
 							<li><input type="submit" value="Gerar Exame" class="Documento"/></li>
 						</ul>
+					{% else %}
+						<header>
+							<h2>Solicitação Enviada com Sucesso!</h2>
+						</header>
+					{% endif%}
+					<!--
 						{% for paciente in paciente %}
 							{% if paciente.codigo == codigo and paciente.cpf == cpf %}
-								<!--<iframe src="{{ paciente.file.url }}" frameborder="0" marginheight="0" marginwidth="0" scrolling="no"></iframe>-->
+								<iframe src="{{ paciente.file.url }}" frameborder="0" marginheight="0" marginwidth="0" scrolling="no"></iframe>
 								<h3>Paciente:{{ paciente.nome }}</h3><br>
 								<h3>Baixe o Exame: <a href="{{ paciente.file.url }}">Clique Aqui!</a></h3>
 							{% else %}
 								Dados Incorretos!
 							{% endif %}
-						{% endfor %}
+						{% endfor %}-->
 					</form>
 				</div>
 		</section>
 
-
-		<!-- Footer2 -->
-			<section id="footer2">
+<!-- Footer -->
+			<section id="footer">
 				<div class="inner">
-					<header>
-						<h2>Get in Touch</h2>
-					</header>
+				
 					<div class="copyright">
 						&copy; Untitled Design: <a href="https://templated.co/">TEMPLATED</a>. Images <a href="https://unsplash.com/">Unsplash</a>
+					</div>
+
+					<div class="Doutor">
+						Dr. Wild Max<br>
+						CRBM 5230
+					</div>
+
+					<div>
+						Rua Marcos Parente, Nº 600, Sala 02, Bairro: Centro. Picos - PI.
+						Contato: (89) 9971-7285/labmaxpi@hotmail.com
 					</div>
 				</div>
 			</section>

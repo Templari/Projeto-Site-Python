@@ -62,6 +62,45 @@ class Paciente(models.Model):
     def __str__(self):
         return self.nome
 
+class ColetaAgendada(models.Model):
+    rua = models.CharField("Rua", max_length=50,null=False)
+    numero = models.CharField("Numero",max_length=20,null=False)
+    bairro = models.CharField("Bairro",max_length=50, null=False)
+    complemento = models.CharField("Complemento", max_length=100, null=False)
+    telefone = models.IntegerField("Telefone",null=False)
+    email = models.EmailField("Email",null=False)
+    nome = models.CharField("Nome Completo",max_length=50,null=False)
+
+
+    def setRua(self,rua=''):
+        self.rua = rua
+    def getRua(self):
+        return self.rua
+    def setBairro(self,bairro=''):
+        self.bairro = bairro
+    def getBairro(self):
+        return self.bairro
+    def setNumero(self,numero=''):
+        self.numero = numero
+    def getNumero(self):
+        return self.numero
+    def setComplemento(self,complemento=''):
+        self.complemento = complemento
+    def getComplemento(self):
+        return self.complemento
+    def setTelefone(self,telefone=''):
+        self.telefone = telefone
+    def getTelefone(self):
+        return self.telefone
+    def setEmail(self,email=''):
+        self.email = email
+    def getEmail(self):
+        return self.email
+    def setNome(self,nome=''):
+        self.nome = nome
+    def getNome(self):
+        return self.nome
+
 
 #class Postagem(models.Model):
 #    titulo = models.CharField(max_length=100,blank=False)

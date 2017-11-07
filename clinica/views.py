@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.utils import timezone
-from .models import Exames, Paciente
+from .models import Exames, Paciente, ColetaAgendada
 
 # Create your views here.
 def post_list(request):
@@ -24,4 +24,17 @@ def elements(request):
 def about(request):
 	return render(request,'paginas/sobre.html', {})
 def consulta(request):
-	return render(request,'paginas/consulta.html',{})
+	consulta = ColetaAgendada()
+	codigo = 0
+	if(request.method == 'POST'):
+		codigo = 1
+		consulta.setNome(request.POST.get('nomecompleto'))
+		consulta.setRua(request.POST.get('rua'))
+		consulta.setBairro(request.POST.get('bairro'))
+		consulta.setNumero(request.POST.get('numero'))
+		consulta.setTelefone(request.POST.get('telefone'))
+		consulta.setEmail(request.POST.get('email'))
+		consulta.setComplemento(request.POST.get('complemento'))
+		consulta.save()
+		return render(request,'paginas/consulta.html',{'codigo':codigo})
+	return render(request,'paginas/consulta.html',{'codigo':codigo})
