@@ -1,10 +1,10 @@
 from django.shortcuts import render
 from django.utils import timezone
-from .models import Exames, Paciente, ColetaAgendada
+from .models import ListaExames, Paciente, ColetaAgendada
 
 # Create your views here.
 def post_list(request):
-	exames = Exames.objects.filter(published_date__lte = timezone.now()).order_by('published_date')
+	exames = ListaExames.objects.filter(published_date__lte = timezone.now()).order_by('published_date')
 	return render(request,'paginas/index.html', {'exames':exames})
 def generic(request):
 	paciente = Paciente.objects.filter().values()

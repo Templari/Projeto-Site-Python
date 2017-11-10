@@ -20,7 +20,7 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
-class Exames(models.Model):
+class ListaExames(models.Model):
     icon = models.FileField(upload_to='exames/icons', blank=True)
     title = models.CharField(max_length=40, null=True)
     descrip = models.TextField(max_length=150, null=True)
