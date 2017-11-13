@@ -1,11 +1,12 @@
 from django.shortcuts import render
 from django.utils import timezone
-from .models import ListaExames, Paciente, ColetaAgendada
+from .models import Post, ListaExames, Paciente, ColetaAgendada
 
 # Create your views here.
 def post_list(request):
 	exames = ListaExames.objects.filter(published_date__lte = timezone.now()).order_by('published_date')
-	return render(request,'paginas/index.html', {'exames':exames})
+	post=Post.objects.filter(published_date__lte = timezone.now()).order_by('published_date')
+	return render(request,'paginas/index.html', {'exames':exames,'post':post})
 def generic(request):
 	paciente = Paciente.objects.filter().values()
 	cpf = request.POST.get('cpf')
@@ -17,8 +18,10 @@ def generic(request):
 		return render(request,'paginas/generic.html', {'paciente':paciente,'codigo':codigo,'cpf':cpf})
 	return render(request,'paginas/generic.html', {})
 def index(request):
-	exames = Exames.objects.filter(published_date__lte = timezone.now()).order_by('published_date')
-	return render(request,'paginas/index.html', {'exames':exames})
+	exames = ListaExames.objects.filter(published_date__lte = timezone.now()).order_by('published_date')
+	post=Post.objects.filter(published_date__lte = timezone.now()).order_by('published_date')
+	return render(request,'paginas/index.html', {'exames':exames,'post':post})
+	return render(request,'paginas/index.html', {'exames':exames,'post':post})
 def elements(request):
 	return render(request,'paginas/elements.html', {})
 def about(request):

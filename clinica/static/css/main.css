@@ -3825,7 +3825,8 @@
 
 	#footer {
 		background-color: #1429c9;/*aqui*/
-		color: #70a9df;
+		/*color: #70a9df;*/
+		color: #000;
 		padding: 4em 0 2em 0;
 		background: #0174DF;
 	}

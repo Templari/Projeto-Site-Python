@@ -25,7 +25,7 @@
 						<a href="">Inicio</a>
 						<a href="generic">Obter Exame</a>
 						<a href="about">Sobre Nós</a>
-						<a href="contato">Contato</a>
+						<!--<a href="contato">Contato</a>-->
 						<a href="admin">Administrador</a>
 					</nav>
 				</div>
@@ -46,9 +46,9 @@
 			<section id="one">
 				<div class="inner">
 					<header>
-						<h2>Magna Etiam Lorem</h2>
+						<h2>{{ post.title }}</h2>
 					</header>
-					<p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula. Integer adipiscin sem. Nullam quis massa sit amet nibh viverra malesuada. Nunc sem lacus, accumsan quis, faucibus non, congue vel, arcu, erisque hendrerit tellus. Integer sagittis. Vivamus a mauris eget arcu gravida tristique. Nunc iaculis mi in ante.</p>
+					<p>{{ post.text }}</p>
 					<ul class="actions">
 						<li><a href="#" class="button alt">Learn More</a></li>
 					</ul>
@@ -139,19 +139,20 @@
 			<section id="footer">
 				<div class="inner">
 				
-					<div class="copyright">
+					<!--<div class="copyright">
 						&copy; Untitled Design: <a href="https://templated.co/">TEMPLATED</a>. Images <a href="https://unsplash.com/">Unsplash</a>
-					</div>
-
+					</div>-->
+					<center>
 					<div class="Doutor">
 						Dr. Wild Max<br>
 						CRBM 5230
 					</div>
 
 					<div>
-						Rua Marcos Parente, Nº 600, Sala 02, Bairro: Centro. Picos - PI.
-						Contato: (89) 9971-7285/labmaxpi@hotmail.com
+						Rua Marcos Parente, Nº 600, Sala 02, Bairro: Centro. Picos - PI.<br>
+						Contato: (89) 9971-7285 email:labmaxpi@hotmail.com
 					</div>
+					</center>
 				</div>
 			</section>
 
