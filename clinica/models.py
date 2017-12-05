@@ -47,7 +47,7 @@ class Paciente(models.Model):
     def getCodigo(self):
         return self.codigo
     def setCodigo(self,codigo=''):
-        self.codigo=codigo
+        self.codigo=randint(0, 9999999)#codigo
     def getCpf(self):
         return self.cpf
     def setCpf(self,cpf=''):
