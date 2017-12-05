@@ -25,7 +25,7 @@ SECRET_KEY = '7ykz)z&b42iysqir$g#+$46rrfn5w_yycx)7^ffyw@=7jhfnwk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','localhost', 'vitorio.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1','localhost', 'labmax.pythonanywhere.com']
 
 
 # Application definition
