@@ -6,7 +6,10 @@ from .models import Post, ListaExames, Paciente, ColetaAgendada
 def post_list(request):
 	exames = ListaExames.objects.filter(published_date__lte = timezone.now()).order_by('published_date')
 	post=Post.objects.filter(published_date__lte = timezone.now()).order_by('published_date')
-	return render(request,'paginas/index.html', {'exames':exames,'post':post})
+	if post:
+		return render(request,'paginas/index.html', {'exames':exames,'post':post})
+	else:
+		return render(request,'paginas/index.html',{})
 def generic(request):
 	paciente = Paciente.objects.filter().values()
 	cpf = request.POST.get('cpf')
@@ -20,7 +23,6 @@ def generic(request):
 def index(request):
 	exames = ListaExames.objects.filter(published_date__lte = timezone.now()).order_by('published_date')
 	post=Post.objects.filter(published_date__lte = timezone.now()).order_by('published_date')
-	return render(request,'paginas/index.html', {'exames':exames,'post':post})
 	return render(request,'paginas/index.html', {'exames':exames,'post':post})
 def elements(request):
 	return render(request,'paginas/elements.html', {})
